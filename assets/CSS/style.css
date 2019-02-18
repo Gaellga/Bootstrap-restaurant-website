@@ -1,0 +1,10 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    background-color: rgb(235, 235, 235);
+}
+  
+.navbar-nav li a:hover {
+    background-color: rgba(165, 165, 165, 0.3);
+    border-radius: 5px;
+}
