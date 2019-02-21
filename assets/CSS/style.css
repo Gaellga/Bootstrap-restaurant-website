@@ -36,10 +36,10 @@ h1 {
     padding-top:2%;
 }
 a {
-    color: rgb(214, 179, 179);
+    color: rgb(218, 190, 190);
 }
 a:hover{
-    color:pink;
+    color:rgb(255, 255, 255);
 }
 .navbar-nav li a:hover {
     background-color: rgba(165, 165, 165, 0.3);
@@ -62,13 +62,13 @@ a:hover{
 .follow{
     font-size:0.8em;
     padding-top:1%;
-    color:rgb(241, 233, 233);
+    color:rgb(255, 255, 255);
 }
 .footer-copyright{
     font-size:0.8em;
     background-color: #ce2f3f;
     padding-top:1%;
-    color: rgb(37, 37, 37);
+    color: rgb(14, 13, 13);
 }
 /* ---------------- MENU-------------------- */
 .list-group{
