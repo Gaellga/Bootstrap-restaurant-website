@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="accueil">
+    <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-danger sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/logo2.png" width=270 alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img class="logoAnim img-fluid" src="assets/img/logo2.png" width=270 alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarToggler" aria-controls="navbarToggler" aria-expand="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,20 +37,28 @@
             </div>
         </header>
         <section>
-            <div class="container">
-                <div class="jumbotron text-center">
-                    <h1>Bienvenue chez Jajang !</h1>
-                    <h3>- Le n°1 de la cuisine coréenne en Belgique -</h3>
-                </div>
+            <div class="container pb-4">
+                    <div class="jumbotron text-center">
+                            <h1>Nos restaurants</h1>
+                            <h3 id="ouvertureResto"></h3>
+                        </div>
                 <div class="row">
-                    <div class="col-1 col-md-2"></div>
-                    <div class="col-10 col-md-8 text-justify">
-                        <p>Jajang est un restaurant asiatique pas comme les autres. La cuisine authentique aux traditions ancestrales est mise au goût du jour dans un cadre des plus contemporains aux nettes influences d’Asie.</p>
-                        <p>De l’entrée au dessert vous serez transporté dans un univers magique et savoureux. La liste des plats, tout aussi colorés les uns que les autres, sont aussi délicieux qu’appétissants. Et leur présentation ravira tant le plaisir des yeux que des papilles.</p>
-                        <p>Le large assortiments des mets à la carte ne vous apportera que l’embarras du choix! C’est pourquoi, en plus de la carte, le restaurant propose des menus pour découvrir les saveurs uniques des spécialités coréennes. Leur cuisine fine, variée et pleine de goût est également excellente pour la santé, que demander de plus? Vous n’avez aucune excuse pour ne pas y goûter!</p>
-                        <p>Nous livrons à domicile!</p>
+                    <div class="col-12 col-md-5">
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 450px">
+                            <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=10%20Cantersteen%2C%201000%20Bruxelles+(Restaurant%20Jajang%20le%20plus%20proche)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe><br />
+                          </div>
                     </div>
-                    <div class="col-1 col-md-2"></div>
+                    <div class="col-12 col-md-7">
+                            <p class="m-4 s-pace">Ouvert <strong>tous les jours</strong> de 12h à 15h et de 18h à 23h</p>
+                        <ul>
+                            <li class="resto">Jajang Central</li>
+                            <p class="mb-4">Cantersteen 10, 1000 Bruxelles</p>
+                            <li class="resto">Jajang Forest</li>
+                            <p class="mb-4">Avenue Zaman 12, 1190 Forest</p>
+                            <li class="resto">Jajang De Wand</li>
+                            <p class="mb-4">Rue de Wand 33, 1200 Laeken</p>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -59,7 +67,7 @@
             <div class="container">
                 <div class="row">
                     <div class="follow col-md-12 text-center">
-                        <p>Suivez-nous sur:</p>
+                        <p>Suivez-nous sur :</p>
                     </div>
                 </div>
                 <div class="row">
@@ -81,5 +89,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="assets/JS/script.js"></script>
+        <script src="assets/JS/lightbox.js"></script>
     </body>
 </html>

@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="accueil">
+    <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-danger sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/logo2.png" width=270 alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img class="logoAnim img-fluid" src="assets/img/logo2.png" width=270 alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarToggler" aria-controls="navbarToggler" aria-expand="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,27 +39,51 @@
         <section>
             <div class="container">
                 <div class="jumbotron text-center">
-                    <h1>Bienvenue chez Jajang !</h1>
-                    <h3>- Le n°1 de la cuisine coréenne en Belgique -</h3>
+                    <h1>Contactez-nous</h1>
+                    <h3 class="mb-0">pour toute réservation, commande ou livraison</h3>
                 </div>
-                <div class="row">
-                    <div class="col-1 col-md-2"></div>
-                    <div class="col-10 col-md-8 text-justify">
-                        <p>Jajang est un restaurant asiatique pas comme les autres. La cuisine authentique aux traditions ancestrales est mise au goût du jour dans un cadre des plus contemporains aux nettes influences d’Asie.</p>
-                        <p>De l’entrée au dessert vous serez transporté dans un univers magique et savoureux. La liste des plats, tout aussi colorés les uns que les autres, sont aussi délicieux qu’appétissants. Et leur présentation ravira tant le plaisir des yeux que des papilles.</p>
-                        <p>Le large assortiments des mets à la carte ne vous apportera que l’embarras du choix! C’est pourquoi, en plus de la carte, le restaurant propose des menus pour découvrir les saveurs uniques des spécialités coréennes. Leur cuisine fine, variée et pleine de goût est également excellente pour la santé, que demander de plus? Vous n’avez aucune excuse pour ne pas y goûter!</p>
-                        <p>Nous livrons à domicile!</p>
-                    </div>
-                    <div class="col-1 col-md-2"></div>
+            <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="nomprenom">Prénom</label>
+                <input type="text" class="form-control" id="nomprenom" placeholder="Ex: John">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="prenomnom">Nom</label>
+                <input type="text" class="form-control" id="prenomnom" placeholder="Ex: Smith">
                 </div>
             </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Entrez votre adresse email">
+                <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email avec qui que ce soit.</small>
+            </div>
+            <div class="form-group">
+                <label for="objet">Objet</label>
+                <select id="objet" class="form-control">
+                        <option selected>Vous nous contactez pour une...</option>
+                        <option>Réservation de table</option>
+                        <option>Commande à emporter</option>
+                        <option>Livraison à domicile</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                <label for="details">Détails</label>
+                <textarea class="form-control" id="details" rows="4" placeholder="Détaillez votre demande"></textarea>
+                </div>
+            </div>
+            <div class="form-group text-center">
+            <button type="submit" class="btn btn-danger fa fa-check mt-4"><span id="submit">Envoyer</span></button>
+            </div>
+            </form>
         </section>
 
         <footer class="page-footer bg-danger mt-5">
             <div class="container">
                 <div class="row">
                     <div class="follow col-md-12 text-center">
-                        <p>Suivez-nous sur:</p>
+                        <p>Suivez-nous sur :</p>
                     </div>
                 </div>
                 <div class="row">
@@ -75,11 +99,13 @@
             <div class="footer-copyright text-center pb-3 ">© 2018 Copyright:
                 <a href="https://github.com/Gaellga">Gaellga Github Page</a>
             </div>
+        </div>
         </footer>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="assets/JS/script.js"></script>
+        <script src="assets/JS/lightbox.js"></script>
     </body>
 </html>
