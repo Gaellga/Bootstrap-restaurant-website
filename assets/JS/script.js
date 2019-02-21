@@ -1,11 +1,13 @@
 //prenom popup
 $(function(){
-    if($('body').is('.accueil')){
-        //var person = prompt("Quel est ton prénom?");
-        if (person != null) {
-          document.getElementById("prenom").innerHTML = person;
-        } 
-    }
+  var myName = sessionStorage.getItem("myName");
+
+  if(!myName){
+    myName = prompt("Bonjour, quel est votre prénom ?");
+    sessionStorage.setItem("myName", myName);
+  }
+  document.getElementById("prenom").textContent= myName;
+
 });
 
 // date et heure
@@ -26,7 +28,7 @@ var jour = d.getDate()+'/'+mois+'/'+d.getFullYear();
 var heure = d.getHours()+':'+d.getMinutes();
 var ouvert = false;
 
-if(d.getHours() >= 12 && d.getHours() < 16){
+if(d.getHours() >= 12 && d.getHours() < 15){
   document.getElementById("ouvertureResto").innerHTML = "Nous sommes le " + jour+ " et il est "+heure+", nous sommes donc <strong>ouverts</strong>";
 } else if (d.getHours() >= 18 && d.getHours() <= 23){
   document.getElementById("ouvertureResto").innerHTML = "Nous sommes le " + jour+ " et il est "+heure+", nous sommes donc <strong>ouverts</strong>";
