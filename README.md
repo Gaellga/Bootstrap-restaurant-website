@@ -30,4 +30,4 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/Restaurant_Boot
 * Les polices proviennent de [Google Fonts](https://fonts.google.com/)   
 * Mention spéciale à la doc Bootstrap, à w3School et à Stack Overflow pour leur aide précieuse dans la réalisation de ce projet
   
-### Vous pouvez accéder au site via la [Github page](https://gaellga.github.io/bootstrap-resto-website/) ou via [ce lien](gaelle.webtech.one/bootstrap-resto-website)
+### Vous pouvez accéder au site via la [Github page](https://gaellga.github.io/bootstrap-resto-website/) ou via [ce lien](https://gaelle.webtech.one/bootstrap-resto-website/)
