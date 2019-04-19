@@ -11,7 +11,7 @@
 https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/Restaurant_Bootstrap
 
 
-## Langages utilisés  
+## Technologies utilisées 
 
 * HTML5
 * CSS
